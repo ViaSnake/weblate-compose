@@ -1,10 +1,11 @@
 version: "3"
 services:
+
   weblate:
     image: weblate/weblate
     container_name: weblate
     ports:
-      - "49610:8080"
+      - 49610:8080
     restart: always
     tmpfs:
       - /app/cache
